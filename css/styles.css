@@ -47,6 +47,7 @@ img {
 
 .header {
   border-bottom: 1px solid var(--color-cornflower);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -198,10 +199,15 @@ img {
 }
 
 .icon {
-  display: block;
-  margin-bottom: 32px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  width: 264px;
+  height: 112px;
+  background-color: var(--color-cloud);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+
 }
 
 .section {
@@ -273,14 +279,17 @@ img {
 /**----------hero----------------- */
 
 .hero {
+  max-width: 1440px;
   background-color: var(--color-navy-blue);
   background-image: var(--gradient-hero-grey), url(../images/bg-img.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -306,6 +315,9 @@ img {
 
 .main-team {
   background-color: var(--color-cloud);
+  padding-top: 120px;
+  padding-bottom: 110px;
+
 }
 
 .main-list-team {
@@ -379,8 +391,9 @@ img {
 /**-----------------customers-----------------*/
 
 
-.customers {
-  padding-top: 240px;
+.customers-section {
+  padding-top: 120px;
+  padding-bottom: 119px;
 }
 
 .customers-list {
@@ -398,7 +411,10 @@ img {
 
 .customers-link {
   display: flex;
-  padding: 16px 32px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
   fill: var(--color-light-slate);
   border: 1px solid var(--color-light-slate);
   border-radius: 4px;
@@ -407,8 +423,8 @@ img {
 a.customers-link:hover,
 a.customers-link:focus {
   fill: var(--color-ocean);
-  border: 1px solid var(--color-ocean);
-  border-radius: 4px;
+  border-color: var(--color-ocean);
+
 }
 
 
